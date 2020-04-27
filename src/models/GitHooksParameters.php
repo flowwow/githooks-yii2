@@ -136,7 +136,9 @@ class GitHooksParameters extends BaseObject
     public function setHookDirectory(string $hookDirectory): self
     {
         if (!file_exists($hookDirectory)) {
-            throw new InvalidConfigException("Directory {$hookDirectory} not found");
+            if (!mkdir($hookDirectory)) {
+                throw new InvalidConfigException("Unable to create hook directory in {$hookDirectory}");
+            }
         }
         $this->hookDirectory = $hookDirectory;
 
