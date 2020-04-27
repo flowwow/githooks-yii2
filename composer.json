@@ -1,0 +1,29 @@
+{
+  "name": "iseed838/githooks",
+  "minimum-stability": "stable",
+  "description": "Git hooks wrapper form yii2",
+  "keywords": [
+    "githooks"
+  ],
+  "homepage": "https://github.com/iseed838/githooks",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Boyarchuk",
+      "email": "iseed838@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "yiisoft/yii2": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "githooks\\": "src"
+    }
+  }
+}

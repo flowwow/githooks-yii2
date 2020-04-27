@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+require_once dirname(__FILE__) . '/bootstrap.php';
+
+$config = yii\helpers\ArrayHelper::merge(require YII_APP_BASE_PATH . '/common/config/main.php',
+    require YII_APP_BASE_PATH . '/common/config/main-local.php', require YII_APP_BASE_PATH . '/console/config/main.php',
+    require YII_APP_BASE_PATH . '/console/config/main-local.php');
+
+$application = new yii\console\Application($config);
+$exitCode    = $application->runAction('githooks/hooks/handle', [
+    '{handleName}'
+]);
+exit($exitCode);
