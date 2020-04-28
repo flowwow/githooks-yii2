@@ -7,7 +7,7 @@ This package provides the ability to register git events and make settings depen
 
 To install the composer package, run the command:
 
-`composer require iseed838/githooks " master"`
+`composer require iseed838/githooks ^0.1`
 
 1) Next, you need to connect the console module to the configuration @console\config\main.php
 
