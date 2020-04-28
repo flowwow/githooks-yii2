@@ -90,4 +90,65 @@ You can create your own events
 inheriting the BaseEvent class or applying the EventInterface interface
 Handlers inherit the BaseEventHandler class or the EventHandlerInterface interface
 
+7) Next, add the rules to the hook parameters.
+```
+    GitHooksParameters :: class => [
+        'rules' => [
+            Instance :: of ('githook.post_merge.migrate'),
+            Instance :: of ('githook.post_merge.cache_flush'),
+        ]
+    ]
+```
 That's all.
+
+
+Here is an example of a full config
+```
+        'githook.yii.parameters'              => function () {
+            return GitHooksParameters::make();
+        },
+        'githook.yii_test.parameters'         => function () {
+            $parameters = GitHooksParameters::make();
+        
+            return $parameters->setYiiPath('yii_test');
+        },
+        'githook.post_merge.migrate'          => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, AlwaysEvent::make(),
+                MigrateEventHandler::make(), Yii::$container->get('githook.yii.parameters'));
+        },
+        'githook.post_merge.cache_flush'      => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, AlwaysEvent::make(),
+                CacheFlushEventHandler::make(), Yii::$container->get('githook.yii.parameters'));
+        },
+        'githook.post_merge.lang_drop'        => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, AlwaysEvent::make(),
+                RedisDropEventHandler::make(), Yii::$container->get('githook.yii.parameters'));
+        },
+        'githook.post_merge.composer_install' => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, ComposerChangeEvent::make(),
+                ComposerUpdateEventHandler::make(), Yii::$container->get('githook.yii.parameters'));
+        },
+        'githook.post_merge.npm_install'      => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, NodeChangeEvent::make(),
+                NodeUpdateEventHandler::make(), Yii::$container->get('githook.yii.parameters'));
+        },
+        'githook.post_merge.test_migrate'     => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, AlwaysEvent::make(),
+                MigrateEventHandler::make(), Yii::$container->get('githook.yii_test.parameters'));
+        },
+        'githook.post_merge.test_cache_flush' => function () {
+            return new GitHookRule(GitHooksParameters::HOOK_POST_MERGE, AlwaysEvent::make(),
+                CacheFlushEventHandler::make(), Yii::$container->get('githook.yii_test.parameters'));
+        },
+        GitHooksParameters::class             => [
+            'rules' => [
+                Instance::of('githook.post_merge.migrate'),
+                Instance::of('githook.post_merge.cache_flush'),
+                Instance::of('githook.post_merge.lang_drop'),
+                Instance::of('githook.post_merge.composer_install'),
+                Instance::of('githook.post_merge.npm_install'),
+                Instance::of('githook.post_merge.test_migrate'),
+                Instance::of('githook.post_merge.test_cache_flush'),
+            ]
+        ]
+```
