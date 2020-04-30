@@ -19,7 +19,7 @@ class Module extends \yii\base\Module
      */
     public function init()
     {
-        Yii::setAlias('@githooks', dirname(Yii::getAlias('@console')) . '/vendor/iseed838/githooks/src');
+        Yii::setAlias('@githooks', dirname(Yii::getAlias('@console')) . '/vendor/flowwow/githooks/src');
         parent::init();
         // custom initialization code goes here
     }
