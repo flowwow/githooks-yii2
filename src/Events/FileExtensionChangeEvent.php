@@ -9,7 +9,7 @@ use yii\base\InvalidConfigException;
 /**
  * Событие при обновлении файлов с расширениями
  * Class FileExtensionsChangeEvent
- * @package Flowwow\Githooks\Events;
+ * @package Flowwow\Githooks\Events
  */
 class FileExtensionChangeEvent extends BaseEvent
 {

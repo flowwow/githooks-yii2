@@ -7,7 +7,7 @@ namespace Flowwow\Githooks\Events;
 /**
  * Событие при обновлении файла
  * Class FileChangeEvent
- * @package Flowwow\Githooks\Events;
+ * @package Flowwow\Githooks\Events
  */
 class FileChangeEvent extends BaseEvent
 {

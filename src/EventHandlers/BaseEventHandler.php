@@ -11,7 +11,7 @@ use Flowwow\Githooks\Traits\MakeTrait;
 /**
  * Базовый класс обработчиков событий
  * Class BaseEventHandler
- * @package Flowwow\Githooks\EventHandlers\
+ * @package Flowwow\Githooks\EventHandlers
  */
 abstract class BaseEventHandler implements EventHandlerInterface
 {

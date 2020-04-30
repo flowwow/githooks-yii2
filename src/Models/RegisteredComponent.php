@@ -11,7 +11,7 @@ use yii\base\InvalidConfigException;
 /**
  * Описыват логику регистрации хуков
  * Class RegisteredComponent
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models
  */
 class RegisteredComponent
 {

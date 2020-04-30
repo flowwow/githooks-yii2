@@ -7,7 +7,7 @@ namespace Flowwow\Githooks\Events;
 /**
  * Событие при обновлении файла package.json
  * Class PackageUpdateEvent
- * @package Flowwow\Githooks\Events;
+ * @package Flowwow\Githooks\Events
  */
 class NodeChangeEvent extends FileChangeEvent
 {

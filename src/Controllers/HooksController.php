@@ -2,8 +2,8 @@
 
 namespace Flowwow\Githooks\Controllers;
 
-use Flowwow\Githooks\models\HandleComponent;
-use Flowwow\Githooks\models\RegisteredComponent;
+use Flowwow\Githooks\Models\HandleComponent;
+use Flowwow\Githooks\Models\RegisteredComponent;
 use yii\base\InvalidConfigException;
 use yii\console\Controller;
 use yii\di\NotInstantiableException;

@@ -7,7 +7,7 @@ namespace Flowwow\Githooks\Events;
 /**
  * Событие при обновлении файла composer.json
  * Class ComposerUpdateEvent
- * @package Flowwow\Githooks\Events;
+ * @package Flowwow\Githooks\Events
  */
 class ComposerChangeEvent extends FileChangeEvent
 {

@@ -3,21 +3,21 @@
 
 namespace Flowwow\Githooks\EventHandlers;
 
-use Flowwow\Githooks\helpers\CommandHelper;
+use Flowwow\Githooks\Helpers\CommandHelper;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
- * Выполняет обновление файлов ролей
- * Class RbacUpdateEventHandler
- * @package Flowwow\Githooks\EventHandlers;
+ * Выполняет миграцию
+ * Class MigrateEventHandler
+ * @package Flowwow\Githooks\EventHandlers
  */
-class RbacUpdateEventHandler extends BaseEventHandler
+class MigrateEventHandler extends BaseEventHandler
 {
     /** @var string Аргументы вызова */
-    protected $arguments = 'rbac/init';
+    protected $arguments = 'migrate --interactive=0';
     /** @var string Коментарий обработчика */
-    protected $comment = '* Обновим правила ролей ...';
+    protected $comment = '* Применим миграции ...';
 
     /**
      * @param array $changeFiles
@@ -29,6 +29,6 @@ class RbacUpdateEventHandler extends BaseEventHandler
     {
         $command = CommandHelper::make();
 
-        return $command->yii($this->getArguments());
+        return $command->yiiMigrate($this->getArguments());
     }
 }

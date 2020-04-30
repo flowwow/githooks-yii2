@@ -7,7 +7,7 @@ use Flowwow\Githooks\models\GitHooksParameters;
 /**
  * Описывает событие хука
  * Interface EventInterface
- * @package Flowwow\Githooks\Interfaces;
+ * @package Flowwow\Githooks\Interfaces
  */
 interface EventInterface
 {

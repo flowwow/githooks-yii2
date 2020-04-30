@@ -10,7 +10,7 @@ use yii\base\InvalidConfigException;
 /**
  * Обрабатывает логику файлов хуков
  * Class HookFileComponent
- * @package Flowwow\Githooks\Models;
+ * @package Flowwow\Githooks\Models
  */
 class HookFileComponent
 {

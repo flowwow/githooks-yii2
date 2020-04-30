@@ -12,7 +12,7 @@ use yii\di\NotInstantiableException;
 /**
  * Описыват логику обработчиков хуков
  * Class RegisteredComponent
- * @package Flowwow\Githooks\Models;
+ * @package Flowwow\Githooks\Models
  */
 class HandleComponent
 {

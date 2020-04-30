@@ -13,7 +13,7 @@ use yii\di\NotInstantiableException;
 /**
  * Описывает правило для событий хуков
  * Class GitHookRule
- * @package Flowwow\Githooks\Models;
+ * @package Flowwow\Githooks\Models
  */
 class GitHookRule extends BaseObject
 {

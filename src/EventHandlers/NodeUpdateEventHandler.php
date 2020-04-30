@@ -10,7 +10,7 @@ use yii\di\NotInstantiableException;
 /**
  * Устанавливаем зависимости node
  * Class NodeUpdateEventHandler
- * @package Flowwow\Githooks\EventHandlers;
+ * @package Flowwow\Githooks\EventHandlers
  */
 class NodeUpdateEventHandler extends BaseEventHandler
 {
