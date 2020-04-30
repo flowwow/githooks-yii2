@@ -10,7 +10,7 @@ To install the composer package,
             "type": "vcs",
             "url": "https://github.com/shesternin0/flowwow-githooks.git"
         }`
-* run the command: `composer require shesternin0/flowwow-githooks ^0.1`
+* run the command: `composer require flowwow/githooks`
 
 1) Next, you need to connect the console module to the configuration @console\config\main.php
 
