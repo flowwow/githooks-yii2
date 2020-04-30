@@ -61,7 +61,7 @@ class GitHooksParameters extends BaseObject
     {
         $this->setBaseDirectory(dirname(Yii::getAlias('@console')));
         $this->setHookDirectory("{$this->baseDirectory}/.githooks/");
-        $this->setTemplatesDirectory(dirname(__DIR__) . '/templates/');
+        $this->setTemplatesDirectory(dirname(__DIR__) . '/Templates/');
     }
 
     /**
