@@ -11,7 +11,7 @@ use yii\di\NotInstantiableException;
 
 /**
  * Class HooksController
- * @package githooks\controllers
+ * @package Flowwow\Githooks\Controllers
  */
 class HooksController extends Controller
 {
