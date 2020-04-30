@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\eventHandlers;
+namespace Flowwow\Githooks\EventHandlers;
 
-use githooks\helpers\CommandHelper;
+use Flowwow\Githooks\helpers\CommandHelper;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
  * Выполняет обновление файлов ролей
  * Class RbacUpdateEventHandler
- * @package console\modules\githooks\eventHandlers
+ * @package Flowwow\Githooks\EventHandlers;
  */
 class RbacUpdateEventHandler extends BaseEventHandler
 {

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
 
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Traits\MakeTrait;
 use Yii;
 use yii\base\BaseObject;
 use yii\base\InvalidConfigException;
@@ -13,7 +13,7 @@ use yii\di\Instance;
 /**
  * Настройки пакета githooks
  * Class GitHooksParameters
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models
  */
 class GitHooksParameters extends BaseObject
 {

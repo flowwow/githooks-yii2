@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\eventHandlers;
+namespace Flowwow\Githooks\EventHandlers;
 
-use githooks\helpers\CommandHelper;
+use Flowwow\Githooks\Helpers\CommandHelper;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
  * Устанавливаем зависимости node
  * Class NodeUpdateEventHandler
- * @package console\modules\githooks\eventHandlers
+ * @package Flowwow\Githooks\EventHandlers;
  */
 class NodeUpdateEventHandler extends BaseEventHandler
 {

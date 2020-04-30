@@ -1,13 +1,13 @@
 <?php
 
-namespace githooks\interfaces;
+namespace Flowwow\Githooks\Interfaces;
 
-use githooks\models\GitHooksParameters;
+use Flowwow\Githooks\models\GitHooksParameters;
 
 /**
  * Описывает событие хука
  * Interface EventInterface
- * @package console\modules\githooks\interfaces
+ * @package Flowwow\Githooks\Interfaces;
  */
 interface EventInterface
 {
@@ -19,7 +19,7 @@ interface EventInterface
     public function check(array $changeFiles): bool;
 
     /**
-     * Получает настройки [erjd
+     * Получает настройки хуков
      * @return GitHooksParameters
      */
     public function getParameters(): GitHooksParameters;

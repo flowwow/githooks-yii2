@@ -1,18 +1,18 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
 
-use githooks\helpers\CommandHelper;
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Helpers\CommandHelper;
+use Flowwow\Githooks\Traits\MakeTrait;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
  * Описыват логику обработчиков хуков
  * Class RegisteredComponent
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models;
  */
 class HandleComponent
 {

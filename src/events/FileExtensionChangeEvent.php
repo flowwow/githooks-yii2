@@ -1,7 +1,7 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
 use yii\base\InvalidConfigException;
@@ -9,7 +9,7 @@ use yii\base\InvalidConfigException;
 /**
  * Событие при обновлении файлов с расширениями
  * Class FileExtensionsChangeEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 class FileExtensionChangeEvent extends BaseEvent
 {

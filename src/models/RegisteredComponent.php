@@ -1,11 +1,11 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
 
-use githooks\helpers\CommandHelper;
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Helpers\CommandHelper;
+use Flowwow\Githooks\Traits\MakeTrait;
 use yii\base\InvalidConfigException;
 
 /**

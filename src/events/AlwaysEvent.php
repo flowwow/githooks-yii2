@@ -1,13 +1,13 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
 /**
  * Событие всегда возвращающее true
  * Class AlwaysEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 class AlwaysEvent extends BaseEvent
 {

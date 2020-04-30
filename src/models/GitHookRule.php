@@ -1,11 +1,11 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
 
-use githooks\interfaces\EventHandlerInterface;
-use githooks\interfaces\EventInterface;
+use Flowwow\Githooks\Interfaces\EventHandlerInterface;
+use Flowwow\Githooks\Interfaces\EventInterface;
 use yii\base\BaseObject;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
@@ -13,7 +13,7 @@ use yii\di\NotInstantiableException;
 /**
  * Описывает правило для событий хуков
  * Class GitHookRule
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models;
  */
 class GitHookRule extends BaseObject
 {

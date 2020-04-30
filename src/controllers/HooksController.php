@@ -1,9 +1,9 @@
 <?php
 
-namespace githooks\controllers;
+namespace Flowwow\Githooks\Controllers;
 
-use githooks\models\HandleComponent;
-use githooks\models\RegisteredComponent;
+use Flowwow\Githooks\models\HandleComponent;
+use Flowwow\Githooks\models\RegisteredComponent;
 use yii\base\InvalidConfigException;
 use yii\console\Controller;
 use yii\di\NotInstantiableException;

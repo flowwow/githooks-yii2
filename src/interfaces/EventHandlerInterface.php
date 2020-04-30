@@ -1,13 +1,13 @@
 <?php
 
-namespace githooks\interfaces;
+namespace Flowwow\Githooks\Interfaces;
 
-use githooks\models\GitHooksParameters;
+use Flowwow\Githooks\Models\GitHooksParameters;
 
 /**
  * Описывает обработчик события
  * Interface HandlerInterface
- * @package console\modules\githooks\interfaces
+ * @package Flowwow\Githooks\Interfaces
  */
 interface EventHandlerInterface
 {

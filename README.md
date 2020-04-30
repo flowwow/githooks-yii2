@@ -16,7 +16,7 @@ To install the composer package,
 
 ```
     'modules' => [
-        'githooks' => githooks\Module:: class
+        'githooks' => Flowwow\Githooks\Module::class
     ]
 ```
 
@@ -95,10 +95,10 @@ Handlers inherit the BaseEventHandler class or the EventHandlerInterface interfa
 
 7) Next, add the rules to the hook parameters.
 ```
-    GitHooksParameters :: class => [
+    GitHooksParameters::class => [
         'rules' => [
-            Instance :: of ('githook.post_merge.migrate'),
-            Instance :: of ('githook.post_merge.cache_flush'),
+            Instance::of ('githook.post_merge.migrate'),
+            Instance::of ('githook.post_merge.cache_flush'),
         ]
     ]
 ```

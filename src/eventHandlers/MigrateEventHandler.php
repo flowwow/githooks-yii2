@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\eventHandlers;
+namespace Flowwow\Githooks\EventHandlers;
 
-use githooks\helpers\CommandHelper;
+use Flowwow\Githooks\Helpers\CommandHelper;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
  * Выполняет миграцию
  * Class MigrateEventHandler
- * @package console\modules\githooks\eventHandlers
+ * @package Flowwow\Githooks\EventHandlers;
  */
 class MigrateEventHandler extends BaseEventHandler
 {

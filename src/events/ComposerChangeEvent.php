@@ -1,13 +1,13 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
 /**
  * Событие при обновлении файла composer.json
  * Class ComposerUpdateEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 class ComposerChangeEvent extends FileChangeEvent
 {

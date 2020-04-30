@@ -1,6 +1,6 @@
 <?php
 
-namespace githooks;
+namespace Flowwow\Githooks;
 
 use Yii;
 
@@ -12,7 +12,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'githooks\controllers';
+    public $controllerNamespace = 'Flowwow\Githooks\Controllers';
 
     /**
      * {@inheritdoc}

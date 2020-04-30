@@ -1,15 +1,15 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Traits\MakeTrait;
 use yii\base\InvalidConfigException;
 
 /**
  * Обслуживает файл загрузки
  * Class BootstrapComponent
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models
  */
 class BootstrapFileComponent
 {

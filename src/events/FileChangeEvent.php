@@ -1,13 +1,13 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
 /**
  * Событие при обновлении файла
  * Class FileChangeEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 class FileChangeEvent extends BaseEvent
 {

@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\eventHandlers;
+namespace Flowwow\Githooks\EventHandlers;
 
-use githooks\helpers\CommandHelper;
+use Flowwow\Githooks\Helpers\CommandHelper;
 use yii\base\InvalidConfigException;
 use yii\di\NotInstantiableException;
 
 /**
  * Пересобирает gulp
  * Class GulpUpdateEventHandler
- * @package console\modules\githooks\eventHandlers
+ * @package Flowwow\Githooks\EventHandlers
  */
 class GulpUpdateEventHandler extends BaseEventHandler
 {

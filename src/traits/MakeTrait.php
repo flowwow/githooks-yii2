@@ -1,6 +1,6 @@
 <?php
 
-namespace githooks\traits;
+namespace Flowwow\Githooks\Traits;
 
 use Yii;
 use yii\base\InvalidConfigException;

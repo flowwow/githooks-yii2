@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\models;
+namespace Flowwow\Githooks\Models;
 
 
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Traits\MakeTrait;
 use yii\base\InvalidConfigException;
 
 /**
  * Обрабатывает логику файлов хуков
  * Class HookFileComponent
- * @package console\modules\githooks\models
+ * @package Flowwow\Githooks\Models;
  */
 class HookFileComponent
 {

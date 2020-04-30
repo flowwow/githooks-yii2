@@ -1,13 +1,13 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
 /**
  * Событие при обновлении файлов с фронт расширениями
  * Class WebFileUpdateEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 class WebFileUpdateEvent extends FileExtensionChangeEvent
 {

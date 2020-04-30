@@ -1,17 +1,17 @@
 <?php
 
 
-namespace githooks\events;
+namespace Flowwow\Githooks\Events;
 
 
-use githooks\interfaces\EventInterface;
-use githooks\models\GitHooksParameters;
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Interfaces\EventInterface;
+use Flowwow\Githooks\Models\GitHooksParameters;
+use Flowwow\Githooks\Traits\MakeTrait;
 
 /**
  * Базовый класс событий
  * Class BaseEvent
- * @package console\modules\githooks\events
+ * @package Flowwow\Githooks\Events;
  */
 abstract class BaseEvent implements EventInterface
 {

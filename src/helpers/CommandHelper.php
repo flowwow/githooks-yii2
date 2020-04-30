@@ -1,16 +1,16 @@
 <?php
 
 
-namespace githooks\helpers;
+namespace Flowwow\Githooks\Helpers;
 
 
-use githooks\models\GitHooksParameters;
-use githooks\traits\MakeTrait;
+use Flowwow\Githooks\Models\GitHooksParameters;
+use Flowwow\Githooks\Traits\MakeTrait;
 
 /**
  * Помошник команд хуков
  * Class CommandHelper
- * @package console\modules\githooks\helpers
+ * @package Flowwow\Githooks\Helpers
  */
 class CommandHelper
 {
@@ -129,7 +129,7 @@ class CommandHelper
     }
 
     /**
-     * Устанавливает директорию дял хуков
+     * Устанавливает директорию для хуков
      * @param string $directory
      * @return string|null
      */
