@@ -5,9 +5,12 @@ The git versioning system provides many project management features including an
 The git event model provides the ability to call scripts after events have occurred, such as switching to another branch, loading a project on a local branch, and others.
 This package provides the ability to register git events and make settings depending on the event that occurred.
 
-To install the composer package, run the command:
-
-`composer require iseed838/githooks ^0.1`
+To install the composer package,
+* add repository: ` {
+            "type": "vcs",
+            "url": "https://github.com/shesternin0/flowwow-githooks.git"
+        }`
+* run the command: `composer require shesternin0/flowwow-githooks ^0.1`
 
 1) Next, you need to connect the console module to the configuration @console\config\main.php
 
