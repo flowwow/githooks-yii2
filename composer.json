@@ -1,11 +1,11 @@
 {
-  "name": "iseed838/githooks",
+  "name": "flowwow/githooks",
   "minimum-stability": "stable",
   "description": "Git hooks wrapper form yii2",
   "keywords": [
     "githooks"
   ],
-  "homepage": "https://github.com/iseed838/githooks",
+  "homepage": "https://github.com/shesternin0/flowwow-githooks",
   "type": "library",
   "license": "MIT",
   "authors": [
