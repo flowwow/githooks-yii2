@@ -12,6 +12,6 @@ namespace Flowwow\Githooks\Events;
 class NodeChangeEvent extends FileChangeEvent
 {
     /** @var string Имя файла */
-    protected $filename = 'package.json';
+    protected $filename = 'package-lock.json';
 
 }
