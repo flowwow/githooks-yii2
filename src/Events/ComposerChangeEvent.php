@@ -12,5 +12,5 @@ namespace Flowwow\Githooks\Events;
 class ComposerChangeEvent extends FileChangeEvent
 {
     /** @var string Имя файла */
-    protected $filename = 'composer.json';
+    protected $filename = 'composer.lock';
 }
