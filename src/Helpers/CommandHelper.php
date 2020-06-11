@@ -91,7 +91,7 @@ class CommandHelper
      * @param string $arguments
      * @return string|null
      */
-    public function yiiFlushCache(string $arguments = 'cache/flush-all'): ?string
+    public function yiiFlushCache(string $arguments = 'cache/flush-schema --interactive=0'): ?string
     {
         return $this->yii($arguments);
     }
