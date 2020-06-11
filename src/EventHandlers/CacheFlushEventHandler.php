@@ -15,7 +15,7 @@ use yii\di\NotInstantiableException;
 class CacheFlushEventHandler extends BaseEventHandler
 {
     /** @var string Аргументы вызова */
-    protected $arguments = 'cache/flush-schema';
+    protected $arguments = 'cache/flush-schema --interactive=0';
     /** @var string Коментарий обработчика */
     protected $comment = '* Сбросим кеш моделей yii ...';
 
