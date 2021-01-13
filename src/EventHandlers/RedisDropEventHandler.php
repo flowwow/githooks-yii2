@@ -27,7 +27,7 @@ class RedisDropEventHandler extends BaseEventHandler
      */
     public function handle(array $changeFiles): ?string
     {
-        $command = CommandHelper::make();
+        $command = CommandHelper::make([$this->getParameters()]);
 
         return $command->yiiConsoleRedis($this->getArguments());
     }

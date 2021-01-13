@@ -27,7 +27,7 @@ class RbacUpdateEventHandler extends BaseEventHandler
      */
     public function handle(array $changeFiles): ?string
     {
-        $command = CommandHelper::make();
+        $command = CommandHelper::make([$this->getParameters()]);
 
         return $command->yii($this->getArguments());
     }

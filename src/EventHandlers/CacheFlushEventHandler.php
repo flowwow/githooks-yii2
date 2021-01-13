@@ -27,7 +27,7 @@ class CacheFlushEventHandler extends BaseEventHandler
      */
     public function handle(array $changeFiles): ?string
     {
-        $command = CommandHelper::make();
+        $command = CommandHelper::make([$this->getParameters()]);
 
         return $command->yiiFlushCache($this->getArguments());
     }
